@@ -5,9 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>design your burger</title>
+    <title>Create Your Burger</title>
   </head>
   <body>
+    <!-- title  -->
+    <header>
+      <h1>Create Your Burger</h1>
+    </header>
+    <!-- ///title -->
+    <!-- name the burger - ingredients list - discount - apply -->
+    <main>
+      <!-- name the burger -->
+      <input type="text" name="burgerName" value="" placeholder="Enter Burger Name">
+      <!-- ///name the burger -->
+      <!-- ingredients -->
+      <div class="ingredients">
+        <h2>ingredients</h2>
+        <ul>
+          <li>
+            <label for="cheese">Cheese
+              <input id="cheese" type="checkbox" name="cheese" value="4"> add
+            </label>
+          </li>
+          <li>
+            <label for="egg">Egg
+              <input id="egg" type="checkbox" name="egg" value="6"> add
+            </label>
+          </li>
+          <li>
+            <label for="mustard">Mustard
+              <input id="mustard" type="checkbox" name="mustard" value="2"> add
+            </label>
+          </li>
+          <li>
+            <label for="tomato">Tomato
+              <input id="tomato" type="checkbox" name="tomato" value="3"> add
+            </label>
+          </li>
+          <li>
+            <label for="lettuce">Lettuce
+              <input id="lettuce" type="checkbox" name="lettuce" value="4"> add
+            </label>
+          </li>
+          <li>
+            <label for="ketchup">Ketchup
+              <input id="ketchup" type="checkbox" name="ketchup" value="2"> add
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- ///ingredients -->
+      <!-- discount -->
+      <label for="discount">Discount Coupon</label>
+      <input id="discount" type="text" name="discountCoupon" value="" placeholder="Enter your Coupon">
+      <!-- ///discount -->
+      <!-- Calculate -->
+      <div class="calculate">
+        <button id="bottonCalculate" type="button" name="button">calculate</button>
+      </div>
+      <!-- ///calculate -->
+    </main>
+
+    <!-- ///name the burger - ingredients list - discount - apply -->
+    <!-- total price -->
+    <footer>
+      <p>Your Price</p>
+      <div id= totalPrice>$ 50</div>
+    </footer>
+    <!-- ///total price -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
