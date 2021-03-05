@@ -23,7 +23,11 @@ calculate.addEventListener("click",
       // discount
       if (coupons.includes(discount.value) == true){
         sum -= sum * 0.2;
+        // delete the coupon from the array once it's used
+        var deleteCoupon = coupons.indexOf(discount.value);
+        coupons.splice(deleteCoupon, 1);
       }
+
       totalPrice.innerHTML = "$" + sum;
     }
   }
