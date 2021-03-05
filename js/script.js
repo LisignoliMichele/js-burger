@@ -2,7 +2,9 @@
 var burgerName = document.getElementById("burgerName");
 var calculate = document.getElementById("buttonCalculate");
 var ingredient = document.getElementsByClassName('ingredient');
-var sum = 0;
+var coupons = ['BACKTOSCHOOL','GIFT','july4','SHIPFREE','FALL10','CyberMon','10off','MOM','FALL2011','GOBBLE','SAVE15']
+
+var sum = 50;
 // click
 calculate.addEventListener("click",
   function() {
@@ -15,6 +17,10 @@ calculate.addEventListener("click",
         if (ingredient[i].checked) {
           sum += parseInt(ingredient[i].value);
         }
+      }
+      // discount
+      if (coupons.includes(discount.value) {
+        sum -= * 0.2;
       }
 
     }
