@@ -4,75 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Create Your Burger</title>
+    <title>The Boolean Burger</title>
   </head>
   <body>
-    <!-- title  -->
-    <header>
-      <h1>Create Your Burger</h1>
-    </header>
-    <!-- ///title -->
-    <!-- name the burger - ingredients list - discount - apply -->
-    <main>
-      <!-- name the burger -->
-      <input id="burgerName" type="text" name="burgerName" value="" placeholder="Enter Burger Name">
-      <!-- ///name the burger -->
-      <!-- ingredients -->
-      <div class="ingredients">
-        <h2>ingredients</h2>
-        <ul>
-          <li>
-            <label for="cheese">Cheese
-              <input class="ingredient" id="cheese" type="checkbox" name="cheese" value="4"> add
-            </label>
-          </li>
-          <li>
-            <label for="egg">Egg
-              <input class="ingredient" id="egg" type="checkbox" name="egg" value="6"> add
-            </label>
-          </li>
-          <li>
-            <label for="mustard">Mustard
-              <input class="ingredient" id="mustard" type="checkbox" name="mustard" value="2"> add
-            </label>
-          </li>
-          <li>
-            <label for="tomato">Tomato
-              <input class="ingredient" id="tomato" type="checkbox" name="tomato" value="3"> add
-            </label>
-          </li>
-          <li>
-            <label for="lettuce">Lettuce
-              <input class="ingredient" id="lettuce" type="checkbox" name="lettuce" value="4"> add
-            </label>
-          </li>
-          <li>
-            <label for="ketchup">Ketchup
-              <input class="ingredient" id="ketchup" type="checkbox" name="ketchup" value="2"> add
-            </label>
-          </li>
-        </ul>
-      </div>
-      <!-- ///ingredients -->
-      <!-- discount -->
-      <label for="discount">Discount Coupon</label>
-      <input id="discount" type="text" name="discountCoupon" value="" placeholder="Enter your Coupon">
-      <!-- ///discount -->
-      <!-- Calculate -->
-      <div class="calculate">
-        <button id="buttonCalculate" type="button" name="button">calculate</button>
-      </div>
-      <!-- ///calculate -->
-    </main>
+    <div class="container">
+      <!-- title  -->
+      <header>
+        <div class="titolo">
+          <h1>Create Your Burger</h1>
+          <img class="boolean_burger" src="img/boolean_burger.png" alt="boolean_burger">
+        </div>
+      </header>
+      <!-- ///title -->
+      <!-- name the burger - ingredients list - discount - apply -->
+      <main>
+        <!-- name the burger -->
+        <div class="enterName">
+            <input id="burgerName" class="text-box" type="text" name="burgerName" value="" placeholder="Enter The Burger Name">
+        </div>
+        <!-- ///name the burger -->
+        <!-- ingredients -->
+        <div class="ingredients">
+          <h2>ingredients :</h2>
+          <ul class="ingredients-list">
+            <li>
+              <img src="img/cheese.png" alt="cheese">
+              <label class="check-container" for="cheese">Cheese<br><small>add $ 4.00</small>
+                <input class="ingredient" id="cheese" type="checkbox" name="cheese" value="4">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <img src="img/egg.png" alt="egg">
+              <label class="check-container" for="egg">Egg<br><small>add $ 6.00</small>
+                <input class="ingredient" id="egg" type="checkbox" name="egg" value="6">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <img src="img/mustard.png" alt="mustard">
+              <label class="check-container" for="mustard">Mustard<br><small>add $ 2.00</small>
+                <input class="ingredient" id="mustard" type="checkbox" name="mustard" value="2">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <img src="img/tomato.png" alt="tomato">
+              <label class="check-container" for="tomato">Tomato<br><small>add $ 3.00</small>
+                <input class="ingredient" id="tomato" type="checkbox" name="tomato" value="3">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <img src="img/lettuce.png" alt="lettuce">
+              <label class="check-container" for="lettuce">Lettuce<br><small>add $ 4.00</small>
+                <input class="ingredient" id="lettuce" type="checkbox" name="lettuce" value="4">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <img src="img/ketchup.png" alt="ketchup">
+              <label class="check-container" for="ketchup">Ketchup<br><small>add $ 2.00</small>
+                <input class="ingredient" id="ketchup" type="checkbox" name="ketchup" value="2">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- ///ingredients -->
+        <!-- discount -->
+        <div class="discount_coupon">
+          <input class="discount_text-box" id="discount" type="text" name="discountCoupon" value="" placeholder="Enter here your Coupon if you own one">
+        </div>
+        <!-- ///discount -->
+        <!-- Calculate -->
+        <div class="calculate">
+          <button id="buttonCalculate" type="button" name="button">Buy</button>
+        </div>
+        <!-- ///calculate -->
+      </main>
 
-    <!-- ///name the burger - ingredients list - discount - apply -->
-    <!-- total price -->
-    <footer>
-      <p>Your Price</p>
-      <div id= totalPrice>$ 50</div>
-    </footer>
-    <!-- ///total price -->
+      <!-- ///name the burger - ingredients list - discount - apply -->
+      <!-- total price -->
+      <footer>
+        <p>Your Price :</p>
+        <div id= totalPrice>$ 50.00</div>
+      </footer>
+      <!-- ///total price -->
+    </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
