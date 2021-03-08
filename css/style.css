@@ -108,6 +108,9 @@ body{
   align-items: center;
   padding: 20px;
 }
+.ingredients-list li a{
+  text-decoration: none;
+}
 .ingredients-list img{
   max-width: 80px;
   margin-right: 30px;
@@ -116,6 +119,8 @@ body{
 .ingredients-list label{
   font-size: 25px;
   line-height: 22px;
+  display: flex;
+  align-items: center;
 }
 .ingredients-list small{
   font-size: 16px;
@@ -138,8 +143,8 @@ body{
 }
 .checkmark {
   position: absolute;
-  top: 25px;
-  left: 78px;
+  top: 60px;
+  left: 190px;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -323,7 +328,7 @@ footer{
 @media screen and (max-width: 350px) {
   .boolean_burger:active{
       animation: rotateBURGER;
-      
+
     }
     @keyframes rotateBURGER{
       0%{
