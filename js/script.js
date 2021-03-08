@@ -31,7 +31,7 @@ calculate.addEventListener("click",
       sum = (Math.round(sum * 100) / 100).toFixed(2);
 
       // insert in the result in the html
-      totalPrice.innerHTML = "$" + sum;
+      totalPrice.innerHTML = "$ " + sum;
       console.log(coupons)
     }
   }

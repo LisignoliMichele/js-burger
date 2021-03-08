@@ -23,8 +23,8 @@ footer{
 body{
   background-color: #666666;
 }
-header img{
-  width: 350px;
+.boolean_burger{
+  width: 250px;
   position: absolute;
   top: -100px;
   right: -90px;
@@ -34,6 +34,9 @@ header img{
   animation-iteration-count: infinite;
   transition: all 3s;
   z-index: 10;
+}
+.boolean_burger img{
+  width: 100%;
 }
 /* animation */
 @keyframes rotateBURGER{
@@ -47,7 +50,7 @@ header img{
     transform: rotate(30deg);
   }
 }
-header img:active{
+.boolean_burger:active{
   width: 100%;
   top: 0%;
   right: 0%;
@@ -67,8 +70,10 @@ header img:active{
 /* ENTER BURGER NAME */
 .enterName{
   text-align: center;
+
 }
 .text-box{
+  width: 100%;
   border-color: transparent;
   background: transparent;
   font-family: 'Anton', sans-serif;
@@ -226,4 +231,116 @@ footer{
   background-color: #d33359;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1100px) {
+
+.boolean_burger:active{
+    top: 50px;
+    right: 30%;
+  }
+  @keyframes rotateBURGER{
+    0%{
+      transform:rotate(30deg);
+      top: 10px;
+      right: 40%;
+    }
+    50%{
+      transform: rotate(10deg);
+      top: 10px;
+      right: 20%
+    }
+    100%{
+      transform:rotate(30deg);
+      top: 10px;
+      right: 40%;
+
+    }
+  }
+  .titolo h1{
+    padding-top: 230px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container{
+    width: 90%
+  }
+  .ingredients-list li{
+    width: 50%;
+  }
+  .boolean_burger:active{
+      top: 50px;
+      right: 25%;
+    }
+  @keyframes rotateBURGER{
+    0%{
+      transform:rotate(30deg);
+      top: 10px;
+      right: 20%;
+    }
+    50%{
+      transform: rotate(10deg);
+      top: 10px;
+      right: 30%
+    }
+    100%{
+      transform:rotate(30deg);
+      top: 10px;
+      right: 20%;
+
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .ingredients-list li{
+    width: 100%;
+    padding: 20px 0;
+  }
+  .ingredients-list li:nth-child(odd){
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+  .text-box{
+    font-size: 25px;
+    padding: 80px 0;
+  }
+  footer{
+    flex-wrap: wrap;
+    text-align: right;
+  }
+  footer > *{
+    width: 100%
+  }
+  .discount_text-box{
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .boolean_burger:active{
+      animation: rotateBURGER;
+      
+    }
+    @keyframes rotateBURGER{
+      0%{
+        transform:rotate(30deg);
+        top: 10px;
+        right: 5%;
+      }
+      50%{
+        transform: rotate(10deg);
+        top: 10px;
+        right: 10%;
+      }
+      100%{
+        transform:rotate(30deg);
+        top: 10px;
+        right: 5%;
+
+      }
+  }
 }
